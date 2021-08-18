@@ -1,0 +1,216 @@
+:root {
+    --main-color: #378AC4;
+    --darker-main-color: #0569AF;
+    --lighter-main-color: #72aed8;
+}
+.flex {
+    display: flex;
+}
+.flexColumn {
+    display: flex;
+    flex-direction: column;
+}
+.flexColumnReverse{
+    display: flex;
+    flex-direction: column-reverse;
+}
+/* NEED flex OF flexColumn OR flexColumnReverse TO USED THOSE --> */
+.spaceBetween{
+    justify-content: space-between;
+}
+.spaceAround {
+    justify-content: space-around;
+}
+.spaceCenter {
+    justify-content: center;
+}
+.middleAlign {
+    align-items: center;
+}
+.uppercase {
+    text-transform: uppercase;
+}
+.underline {
+    text-decoration: underline;
+}
+.bigger {
+    font-size: 1.2rem !important;
+}
+.oneRem {
+    font-size: 1rem !important;
+}
+.wrap {
+    flex-wrap: wrap;
+}
+.someMargin img {
+    margin: 0 30px !important;
+}
+.ma {
+    margin-top: 1rem;
+}
+.me {
+    margin-right: 1rem;
+}
+.mi {
+    margin-bottom: 1rem;
+}
+.mo {
+    margin-left: 1rem;
+}
+.mu {
+    margin: 1rem;
+}
+.pa {
+    padding-top: 1rem;
+}
+.pe {
+    padding-right: 1rem;
+}
+.pi {
+    padding-bottom: 1rem;
+}
+.po {
+    padding-left: 1rem;
+}
+.pu {
+    padding: 1rem;
+}
+
+.paddLeft3 {
+    padding-left: 3rem;
+}
+.mobileContainerList {
+    color: #111;
+    height: 100%;
+}
+.mobileContainerList ul {
+    list-style: none; 
+    padding-left: 0;
+    height: 100%;
+
+}
+.mobileContainerList li {
+    margin-bottom: 1rem;;
+
+}
+.mobileContainerList span{
+    font-size: 1.1rem;
+    color: #444;
+}
+
+.separator {
+    width: 70%;
+    border-top: 1px lightgray solid;
+    margin: 1rem 0;
+}
+.textBungalow h3 {
+    width: 100%;
+    text-transform: capitalize;
+    font-weight: bolder;
+    margin-bottom: 0.4rem;
+}
+.textBungalow div {
+    /* flex: 1; */
+    min-width: 50%;
+}
+
+.textBungalow span{
+    text-transform: capitalize ;
+    font-weight: bold;
+    color: var(--main-color);
+}
+.textBungalow p {
+    margin: 0;
+    line-height: 18px;
+}
+
+
+.whyBox {
+    margin: 1rem 2rem 1rem 2rem;
+    width: 100%;
+    padding-bottom: 1rem;
+    border-bottom: 1px lightgray solid;
+}
+.whyBox i {
+    flex: 1;
+    text-align: center;
+    color: var(--main-color);
+}
+.whyBox > div {
+    flex: 7;
+}
+
+.whyBox h4 {
+    margin-bottom: 5px;
+    color: var(--darker-main-color);
+    text-transform: uppercase;
+}
+.whyBox a{
+    font-weight: bolder;
+    font-size: larger;
+    color: var(--darker-main-color);
+}
+.whyBox p {
+    font-size: 1rem;
+}
+
+.thatHeight {
+    height: 38px;
+    width: fit-content;
+    align-self: center;
+}
+.ulBLackFat{
+    color: #111;
+    font-size: 1.05rem;
+    /* list-style-type: none; */
+}
+.choicesBox div {
+    /* background-color: rgb(235, 235, 235); */
+    border: 4px var(--darker-main-color) solid;
+    border-radius: 4px;
+    text-align: justify;
+}
+.choicesBox h5 {
+    font-size: 1.4rem;
+    text-align: center;
+}
+.mainColor {
+    color : var(--main-color);
+    font-weight: bold;
+}
+.choicesBox div:hover {
+    box-shadow: 0px 0px 10px gray;
+    transition: all 1s ease;
+}
+.bungalowList {
+    transition: background-color 0.5s ease;
+}
+.bungalowList:hover {
+    background-color: whitesmoke;
+}
+
+.livraisonArt li {
+    color: #111;
+    font-size: 1rem;
+}
+
+@media all and (max-width: 1000px) {
+    .mq10-column {
+        flex-direction: column;
+    }
+}
+
+@media all and (max-width: 500px) {
+    .mq5-column {
+        flex-direction: column;
+    }
+    .mq5-hide {
+        display: none !important;
+    }
+    .mq5-mu {
+        margin: 1rem;;
+    }
+    .whyBox {
+        margin: 0;
+    }
+}
